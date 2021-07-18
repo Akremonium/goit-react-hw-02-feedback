@@ -1,7 +1,9 @@
+import styles from "./Notification.module.scss";
+
 const Notification = ({ message }) => (
-  <>
-    <p>{message}</p>
-  </>
+  <div className={styles.notification}>
+    <p className={styles.message}>{message}</p>
+  </div>
 );
 
 export default Notification;
